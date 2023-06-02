@@ -99,3 +99,9 @@ input[type=submit]:hover {
         margin-right: 0px;
     }
 }
+
+@media (max-width: 600px) {
+    input[type=text]{
+        width: 90%;
+    }
+}
