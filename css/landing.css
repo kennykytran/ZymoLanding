@@ -103,6 +103,16 @@ p{
     transition: all 300ms;
 }
 
+.footer {
+    height:  25px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #00843d;
+    color: white;
+    text-align: center;
+}
+
 /* || Media Queries and Reponsive Styles */
 
 @media (max-width: 1200px) {
