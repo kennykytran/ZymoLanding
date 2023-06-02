@@ -1,0 +1,101 @@
+/* form container */
+
+.form-container {
+    margin: 2em auto;
+    width: 40%;
+}
+
+/* || Input styles */
+
+.input-left{
+    float: left;
+}
+
+.input-right{
+    float: right;
+    margin-right: 24px;
+}
+
+.clear{
+    /* Made to prevent input elements overflowing */
+    clear: both;
+}
+  
+input, label {
+    display:block;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 18px 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+}
+
+textarea {
+    min-height: 200px;
+    min-width: 155px;
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+}
+  
+input[type=submit] {
+    background-color: #00843d;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: 1000;
+    margin: 0px 0px 2em 0px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+    transition: all 300ms;
+}
+
+/* || Media Queries and Reponsive Styles */
+
+@media (max-width: 1200px) {
+    input[type=text]{
+        width: 90%;
+    }
+    .input-right{
+        float: right;
+        margin-right: 6px;
+    }
+}
+
+@media (max-width: 1020px) {
+    input[type=text]{
+        width: 100%;
+    }
+    .input-left{
+        margin-right: 60px;
+    }
+    .input-right{
+        float: left;
+    }
+}
+
+@media (max-width: 750px) {
+    .input-left{
+        margin-right: 0px;
+    }
+    .input-right{
+        margin-right: 0px;
+    }
+}

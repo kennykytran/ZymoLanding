@@ -1,0 +1,170 @@
+/* || General styles */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: Montserrat,sans-serif;
+    font-size: 18px;
+}
+
+h1{
+    color: #00843d;
+    font-size: 3em;
+    font-weight: 1000;
+    text-align: center;
+}
+
+h2{
+    font-size: 2em;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+p{
+    margin: auto;
+    margin-bottom: 1em;
+    width: 70%;
+}
+
+/* || ID styles */
+
+#middle-content{
+    padding: 2em 50px;
+    background-color: #F1F1F1;
+}
+
+#header-image img{
+    width: 100%;
+    margin: none;
+    padding: none;
+}
+
+/* || Class styles */
+
+.tag {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+}
+
+.reduce-bottom{
+    margin-bottom: -0.5em;
+}
+  
+.tag.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.center-text {
+    text-align: center;
+}
+
+.thumbnail-list {
+    text-align: center;
+    padding-inline-start: 0px;
+}
+
+.thumbnail-item {
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    padding: 1.5em 100px;
+}
+
+.thumbnail-item img{
+    width: 10vw;
+}
+
+.button {
+    background-color: #00843d;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: 1000;
+    margin: 0px 0px 2em 0px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.button:hover {
+    background-color: #45a049;
+    transition: all 300ms;
+}
+
+/* || Media Queries and Reponsive Styles */
+
+@media (max-width: 1200px) {
+    .thumbnail-item {
+        display: inline-block;
+        text-align: center;
+        margin: auto;
+        padding: 1.5em 50px;
+    }
+    input[type=text]{
+        width: 90%;
+    }
+    .input-right{
+        float: right;
+        margin-right: 6px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .thumbnail-item {
+        display: inline-block;
+        text-align: center;
+        margin: auto;
+        padding: 10px;
+    }
+    input[type=text]{
+        width: 100%;
+    }
+    .input-left{
+        margin-right: 60px;
+    }
+    .input-right{
+        float: left;
+    }
+    p{
+        width: 80%;
+    }
+}
+
+@media (max-width: 750px) {
+    h1{
+        font-size: 2.5em;
+    }
+    .thumbnail-item {
+        display: inline-block;
+        text-align: center;
+        margin: auto;
+        padding: 5px;
+    }
+    .thumbnail-item h3{
+        font-size: 1em;
+    }
+    .input-left{
+        margin-right: 0px;
+    }
+    .input-right{
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    p{
+        width: 100%;
+    }
+}

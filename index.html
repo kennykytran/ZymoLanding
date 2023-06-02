@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Zymo Landing Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/landing.css">
+        <link rel="stylesheet" href="css/modal.css">
+        <link rel="stylesheet" href="css/form.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="js/modal.js" async defer></script>
+        <script src="js/transition.js" async defer></script>
+    </head>
+    <body>
+        
+        <div id="submitModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="close">&times;</div>
+                    <h2>Thank you for submitting!</h2>
+                </div>
+                <div class="modal-body">
+                    <p>We will be in contact with you soon.</p>
+                </div>
+            </div>    
+        </div>
+
+
+        <div id="header-image">
+            <img src="assets/banner.jpg" alt="Collage of scientists conducting research with various tools">
+        </div>
+        
+        <div id="heading" class="center-text">
+            <h1 class="reduce-bottom">Header Text</h1>
+            <h3>Lorem ipsum</h3>
+        </div>
+        
+        <div id="intro-content" class="center-text">
+            <ul class="thumbnail-list">
+                <li class="thumbnail-item">
+                    <img src="assets/checkmark_icon.jpg" />
+                    <h3> Lorem ipsum </h3>
+                </li>
+                <li class="thumbnail-item">
+                    <img src="assets/graphs_icon.jpg" />
+                    <h3> Lorem ipsum </h3>
+                </li>
+                <li class="thumbnail-item">
+                    <img src="assets/bullseye_icon.jpg" />
+                    <h3> Lorem ipsum </h3>
+                </li>
+            </ul>
+        </div>
+
+        <div id="inquire-button" class="center-text">
+            <a href="#contact-form" id="modalBtn" class="button">Inquire Now</a>
+        </div>
+        
+        <div id="middle-content" >
+            <h2 class="reduce-bottom"> Header Text </h2>
+            <h3> Lorem ipsum </h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Et ultrices neque ornare aenean euismod elementum nisi. Aliquet risus feugiat in ante metus dictum. Vestibulum sed arcu non odio euismod. 
+                Ornare quam viverra orci sagittis eu. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Amet facilisis magna etiam tempor orci 
+                eu lobortis elementum nibh. Amet luctus venenatis lectus magna fringilla urna porttitor. Massa ultricies mi quis hendrerit. Duis convallis 
+                convallis tellus id interdum. Diam maecenas ultricies mieget mauris pharetra et ultrices.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet. Nisi est sit amet facilisis magna etiam tempor. Quam lacus suspendisse faucibus interdum posuere lorem ipsum. 
+                Amet massa vitae tortor condimentum. Lobortis scelerisque fermentum dui faucibus in ornare. Nisl nisi scelerisque eu ultrices vitae auctor 
+                eu augue ut. Morbi tincidunt ornare massa eget egestas. Consequat id porta nibh venenatis cras. Nibh venenatis cras sed felis eget. 
+                Fringilla urna porttitor rhoncus dolor purus. Et netus et malesuada fames ac turpis egestas. Diam ut venenatis tellus in metus vulputate.
+            </p>
+        </div>
+
+        <div id="contact-form" class="tag">
+            <h2> Form </h2>
+
+            <div class="form-container">
+                <form>              
+                    <div class="input-left">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" required>
+                    </div>
+                    <div class="input-right">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" required>
+                    </div>
+
+                    <br class="clear"/>
+
+                    <div class="input-left">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="companyname" required>
+                    </div>
+              
+                    <div class="input-right">
+                        <label for="role">Role</label>
+                        <input type="text" id="role" name="rolename" required>
+                    </div>
+
+                    <br class="clear"/>
+              
+                    <label for="additional-comments">Additional Comments</label>
+                    <textarea id="subject" name="additional-comments"></textarea>
+
+                    <br class="clear"/>
+                    
+                    <div class="center-text">
+                        <input  type="submit" value="Submit" >
+                    </div>
+              
+                </form>
+              </div>
+        </div>
+    </body>
+</html>
