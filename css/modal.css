@@ -1,4 +1,4 @@
-/*  Dim background for modal */
+/*   || Dim background for modal */
 .modal {
     display: none; 
     position: fixed;
@@ -13,7 +13,7 @@
     background-color: rgba(0,0,0,0.4);
 }
 
-/* Modal Content */
+/*  || Modal Content */
 .modal-content {
     position: relative;
     background-color: #fefefe;
@@ -28,7 +28,7 @@
     animation-duration: 0.4s
 }
 
-/* Sliding Animation */
+/*  || Sliding Animation */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 
     to {top:0; opacity:1}
@@ -39,7 +39,7 @@
     to {top:0; opacity:1}
 }
 
-/* The Close Button */
+/*  || The Close Button */
 .close {
     color: #00843d;
     float: right;
@@ -54,6 +54,7 @@
     cursor: pointer;
 }
 
+/*  || Modal Interior */
 .modal-header {
     padding: 16px 16px 0px 16px;
     background-color: white;
